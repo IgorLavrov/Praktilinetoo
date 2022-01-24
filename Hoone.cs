@@ -16,6 +16,8 @@ namespace Praktilinetoo
 
         public Size size;
 
+        public Material material { get; set; }
+
 
         public Size GetSize()
         {
@@ -25,17 +27,25 @@ namespace Praktilinetoo
         {
             return arhit;
         }
-
-        public Hoone(int pindala = 200)
+       public Hoone(int pindala=200)
         {
             Pindala = pindala;
-           
+
+  
+
+        }
+       
+        public Hoone(Material Material)
+        {
+      
+
+            material = Material;
             
         }
 
         public void NaitaInfo()
         {
-            Console.WriteLine($"Mina olen maja, minu pindala on {Pindala} m2");
+            Console.WriteLine($"Mina olen { material} maja, minu pindala on {Pindala} m2");
         }
 
         public  Uks GetUks()

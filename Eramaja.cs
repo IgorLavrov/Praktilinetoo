@@ -19,33 +19,6 @@ namespace Praktilinetoo
             {
             }
 
-        public int Suurus        
-        {
-            set                   
-            {
-                suurus = value;
-                if (suurus < 7) status = "vaike maja";
-                else if (suurus < 17) status = "keskmine maja";
-                else if (suurus < 22) status = "suur maja";
-                else status = "liiga suur maja";
-
-            }
-
-            get { return (suurus); }      
-        }
-
-        public string Status 
-        {
-            get { return status; }    
-        }
-
-        public void NaitaInfo()
-        {
-            Console.WriteLine($" {suurus} ");
-            Console.WriteLine($" {aken} ");
-            Console.WriteLine($" {status} ");
-        }
-
     }
 
 

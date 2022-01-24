@@ -24,7 +24,7 @@ namespace Praktilinetoo
         public void NaitaInfo2()
         {
             Console.WriteLine($"Mina olen Arhitekt, nimu surname on {surname}");
-            Console.WriteLine($" see maja ehitab {year} aastat ");
+            Console.WriteLine($"See maja on  ehitatud -{year}  ");
            
         }
 

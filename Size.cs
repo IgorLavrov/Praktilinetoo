@@ -10,7 +10,7 @@ namespace Praktilinetoo
     {
 
         int suurus;
-        string status;
+        string status { get; set; }
         int aken;
 
         public Size()
@@ -43,14 +43,15 @@ namespace Praktilinetoo
 
         public string Status
         {
+
             get { return status; }
         }
 
         public void NaitaInfo()
         {
-            Console.WriteLine($" {suurus} ");
-            Console.WriteLine($" {aken} ");
-            Console.WriteLine($" {status} ");
+            Console.WriteLine($"Suurus on {suurus} ");
+            Console.WriteLine($"Aken Numbrit {aken} ");
+            Console.WriteLine($"Status {status} ");
         }
 
 
