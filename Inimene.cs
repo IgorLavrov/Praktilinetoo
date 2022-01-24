@@ -10,7 +10,9 @@ namespace Praktilinetoo
     {
         private string nimi;
         public Hoone hoone { get; set; }
-      
+
+        public EraMaja eramaja { get; set; }
+
 
         public Inimene(string nimi)
         {
@@ -31,6 +33,9 @@ namespace Praktilinetoo
             hoone.GetUks().NaitaInfo();
             Console.WriteLine("Arhitekt:");
             hoone.Getarhitekt().NaitaInfo2();
+            hoone.GetkorteriteMaja().NaitaInfo();
+            
+            
            
             
       

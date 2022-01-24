@@ -47,10 +47,11 @@
     <Compile Include="Eramaja.cs" />
     <Compile Include="Hoone.cs" />
     <Compile Include="Inimene.cs" />
+    <Compile Include="KorteriteMaja.cs" />
     <Compile Include="Material.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Size.cs" />
+    <Compile Include="Aken.cs" />
     <Compile Include="Uks.cs" />
   </ItemGroup>
   <ItemGroup>

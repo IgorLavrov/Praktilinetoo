@@ -14,14 +14,21 @@ namespace Praktilinetoo
 
         public Arhitekt arhit;
 
-        public Size size;
+        public Aken aken;
+
+        public KorteriteMaja korteriteMaja;
+
+        public KorteriteMaja GetkorteriteMaja()
+        {
+            return korteriteMaja;
+        }
 
         public Material material { get; set; }
 
 
-        public Size GetSize()
+        public Aken GetSize()
         {
-            return size;
+            return aken;
         }
         public Arhitekt Getarhitekt()
         {

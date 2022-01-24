@@ -15,20 +15,13 @@ namespace Praktilinetoo
                 Inimene mees = new Inimene("Juku");
                 majake.uks = new Uks("must");
                 majake.arhit = new Arhitekt("Ivanov", 1984);
-                majake.size = new Size(129, 4);
-                majake.material = new Material();
+                majake.aken = new Aken(4);
+                
+                majake.korteriteMaja = new KorteriteMaja(3, " ");
+                majake.NaitaInfo();
 
                 mees.hoone = majake;
                 mees.NaitaInfo();
-
-
-        
-
-
-
-
-                
-
 
             Console.ReadLine();
 
