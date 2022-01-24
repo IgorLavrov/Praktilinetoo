@@ -36,6 +36,7 @@ namespace Praktilinetoo
             hoone.GetkorteriteMaja().NaitaInfo();
             
             
+            
            
             
       

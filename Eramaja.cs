@@ -11,13 +11,19 @@ namespace Praktilinetoo
         {
 
         int Korteride_arv;
-        int Elanikite_arv;
-        
+        int Elanikite_arv;        
         String status = null;
 
 
+        public EraMaja(String Status, int pindala) : base(pindala)
+        {
+            status = Status;
 
-
+            if (Pindala < 70) status = "vaike maja";
+            else if (Pindala < 170) status = "mediun maja";
+            else if (Pindala < 220)status = "suur maja";
+            else status = "liiga suur maja";
+        }
 
 
         public EraMaja() : base()
@@ -35,9 +41,7 @@ namespace Praktilinetoo
         {
         }
 
-        
-
-
+        /*
         public int Pindala        {
             set
             {
@@ -51,7 +55,7 @@ namespace Praktilinetoo
 
             get { return (Pindala); }
         }
-
+        */
         public String Status
         {
 
@@ -60,9 +64,7 @@ namespace Praktilinetoo
 
         public void NaitaInfo()
         {
-            
-          
-            Console.WriteLine($"Status {status} vaike  maja");
+            Console.WriteLine($"Status {status} ");
         }
 
 
